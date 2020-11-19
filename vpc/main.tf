@@ -54,7 +54,7 @@ resource "aws_security_group" "instance_sg" {
 
     egress {
       from_port = 0
-      to_port = 0 
+      to_port = 0
       protocol = -1
       cidr_blocks = [var.egress_sg_cidr]
     }

@@ -15,6 +15,7 @@ module "ec2_mod" {
   source                = "./ec2"
   instance_sn_id        = module.vpc_mod.public_subnet_id
   instance_sg_id        = module.vpc_mod.security_group_id
+  ec2_vpc_id = module.vpc_mod.id_vpc
   public_ip_association = true
 }
 
